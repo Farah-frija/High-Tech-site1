@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background:black;
+color:white;
+
+background-image: url("contact.avif");
+
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+form {
+
+  padding: 30px;
+  width: auto;
+  height: auto;
+/* From https://css.glass */
+background: rgba(240, 233, 233, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+border: 1px solid rgba(245, 238, 238, 0.3);
+}
+
+form h1 {
+  display: flex;
+  font-size: 20px;
+}
+form img{
+  margin-top:4%;
+  height: 5rem;
+  width: 250px;
+}
+
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #7827e6;
+}
+form .corps-formulaire {
+  display: flex;
+  margin-bottom: 30px;
+}
+form .corps-formulaire .groupe {
+  position: relative; 
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form .corps-formulaire  .groupe input {
+  width: 260PX;
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  background: rgba(240, 233, 233, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(245, 238, 238, 0.3);
+  color:white;
+  outline-color: #7827e6;
+  border-radius: 5px;
+}
+ input::placeholder {
+  color: #efdcff;
+}
+
+
+form .corps-formulaire  .groupe input:hover {
+  background-color: rgba(75, 14, 104, 0.596);
+
+}
+form .corps-formulaire .groupe i {
+  position: absolute; 
+  left: 0;
+  top: 25px;
+  padding: 9px 8px;
+  color: #7827e6;
+}
+form .corps-formulaire .droite {
+
+  width: 600px;
+  height: 280PX;
+  margin-left: 50px;
+}
+form .groupe label::after{
+  content: " *";
+  color: #7827e6;
+}
+form .corps-formulaire .re {
+  width:  280px;
+  padding: 0 5px 10px 30px;
+  outline-color: #7827e6;
+  border-radius: 5px;
+}
+form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #7827e6;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+form .corps-formulaire .droite .groupe textarea:hover {
+  background-color: rgb(255, 255, 255);
+}
+form .pied-formulaire input {
+  margin-left: 80%;
+  background: #7827e6;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  
+  border: 1px solid rgba(245, 238, 238, 0.692);
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-left: 20px;
+}
+form .login input{
+  margin-top: 30px;
+}
+form .pied-formulaire input:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 920px) {
+  form .corps-formulaire .droite {
+    margin-left: 0px;
+  }
+}
+a{ color:white;}
+
